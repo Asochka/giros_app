@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">GIROS</string>
+    <string name="topay_button">Оплатить</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="main_window">Главная</string>
+    <string name="support">Поддержка</string>
+    <string name="login">Аккаунт</string>
+    <string name="history">История покупок</string>
+</resources>

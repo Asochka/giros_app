@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <data>
+        <variable name="foodName" type="String"/>
+        <variable name="massOfDish" type="String"/>
+        <variable name="foodPrice" type="Float"/>
+    </data>
+
+    <com.google.android.material.card.MaterialCardView
+        android:id="@+id/dish_card"
+        android:layout_width="match_parent"
+        android:layout_height="110dp"
+        app:cardElevation="12dp"
+        app:cardCornerRadius="@dimen/corner_radius"
+        android:layout_marginLeft="5sp"
+        android:layout_marginTop="25sp"
+        android:layout_marginRight="5sp"
+        android:layout_marginBottom="5sp"
+        app:cardBackgroundColor="@color/grey">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_margin="5dp"
+            app:layout_constraintEnd_toEndOf="@+id/dish_mass"
+            app:layout_constraintStart_toEndOf="@+id/dish_mass">
+
+            <TextView
+                android:id="@+id/dish_mass"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="10dp"
+                android:layout_marginBottom="26dp"
+                android:text="@{massOfDish}"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintStart_toEndOf="@+id/dish_photo" />
+
+            <TextView
+                android:id="@+id/dish_name"
+                android:layout_width="145dp"
+                android:layout_height="34dp"
+                android:layout_marginStart="8dp"
+                android:layout_marginTop="5dp"
+                android:fontFamily="@font/sourcesans_regular"
+                android:text="@{foodName}"
+                app:layout_constraintStart_toEndOf="@+id/dish_photo"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <com.google.android.material.imageview.ShapeableImageView
+                android:id="@+id/dish_photo"
+                android:layout_width="100sp"
+                android:layout_height="100sp"
+                android:padding="5dp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:srcCompat="@drawable/salad_96"
+                app:shapeAppearanceOverlay="@style/ShapeAppearanceOverlay.App.CornerRound"/>
+
+            <TextView
+                android:id="@+id/dish_price"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="16dp"
+                android:layout_marginBottom="26dp"
+                android:gravity="top|left"
+                android:text="@{foodPrice.toString()}"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent" />
+
+            <ImageButton
+                android:id="@+id/dishInfo"
+                android:layout_width="48dp"
+                android:layout_height="48dp"
+                android:background="@android:color/transparent"
+                android:contentDescription="diname"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="1.0"
+                app:layout_constraintStart_toEndOf="@+id/dish_name"
+                app:layout_constraintTop_toTopOf="parent"
+                app:srcCompat="@drawable/information_box_outline" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </com.google.android.material.card.MaterialCardView>
+</layout>

@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="purple_200">#FFBB86FC</color>
+    <color name="purple_700">#FF3700B3</color>
+    <color name="teal_200">#FF03DAC5</color>
+    <color name="teal_700">#FF018786</color>
+    <color name="black">#FF000000</color>
+    //important text
+    //other text
+    //icon background
+    <color name="dirty_pink">#8A616C</color> //important text
+    <color name="dark_grey">#878688</color> //other text
+    <color name="grey">#C4C4C4</color> //flash menu background
+    <color name="pink">#FFC1D1</color> //icon background
+    <color name="dark_pink">#BD6D81</color> //important icon background
+    <color name="white">#FFFFFFFF</color> //default background
+</resources>

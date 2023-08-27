@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <data>
+        <variable name="datePurch" type="String"/>
+        <variable name="sum" type="String"/>
+        <variable name="id_check" type="Integer"/>
+    </data>
+
+    <com.google.android.material.card.MaterialCardView
+        android:id="@+id/dish_card"
+        android:layout_width="match_parent"
+        android:layout_height="110dp"
+        app:cardElevation="12dp"
+        app:cardCornerRadius="@dimen/corner_radius"
+        android:layout_marginLeft="5sp"
+        android:layout_marginTop="25sp"
+        android:layout_marginRight="5sp"
+        android:layout_marginBottom="5sp"
+        app:cardBackgroundColor="@color/grey">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_margin="5dp"
+            app:layout_constraintEnd_toEndOf="@+id/dish_mass"
+            app:layout_constraintStart_toEndOf="@+id/dish_mass">
+
+            <TextView
+                android:id="@+id/check_amount"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="10dp"
+                android:layout_marginBottom="26dp"
+                android:text="@{sum}"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintStart_toStartOf="parent" />
+
+            <TextView
+                android:id="@+id/check_date"
+                android:layout_width="145dp"
+                android:layout_height="34dp"
+                android:layout_marginTop="5dp"
+                android:fontFamily="@font/sourcesans_regular"
+                android:text="@{datePurch}"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <ImageButton
+                android:id="@+id/check_info"
+                android:layout_width="48dp"
+                android:layout_height="48dp"
+                android:background="@android:color/transparent"
+                android:contentDescription="diname"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="1.0"
+                app:layout_constraintStart_toEndOf="@+id/check_amount"
+                app:layout_constraintTop_toTopOf="parent"
+                app:srcCompat="@drawable/information_box_outline" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </com.google.android.material.card.MaterialCardView>
+</layout>
