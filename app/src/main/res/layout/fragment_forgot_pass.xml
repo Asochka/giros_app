@@ -6,19 +6,31 @@
     <androidx.constraintlayout.widget.ConstraintLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent">
+        <include layout="@layout/menu_bar_main"/>
 
-        <EditText
-            android:id="@+id/editText_login"
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/editText_login_layout"
             android:layout_width="220dp"
-            android:layout_height="45dp"
+            android:layout_height="wrap_content"
             android:layout_marginTop="220dp"
-            android:ems="10"
-            android:hint="Email or phone"
-            android:textSize="16dp"
+            android:textColorHint="@color/dark_grey"
+            app:boxBackgroundColor="@color/white"
+            app:boxStrokeColor="@color/dirty_pink"
+            app:counterOverflowTextColor="@color/dark_grey"
+            app:hintTextColor="@color/dirty_pink"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toTopOf="parent" />
+            app:layout_constraintTop_toTopOf="parent">
 
+            <EditText
+                android:id="@+id/editTextLogin"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:textColor="@color/black"
+                android:singleLine="true"
+                android:hint="Email or phone"
+                android:textSize="16dp"/>
+        </com.google.android.material.textfield.TextInputLayout>
 
         <Button
             android:id="@+id/button_reset"
@@ -30,7 +42,7 @@
             android:textSize="16dp"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/editText_login" />
+            app:layout_constraintTop_toBottomOf="@+id/editText_login_layout" />
 
         <LinearLayout
             android:layout_width="220dp"
@@ -57,5 +69,6 @@
                 android:text="Log In"
                 android:textSize="8dp" />
         </LinearLayout>
+
     </androidx.constraintlayout.widget.ConstraintLayout>
 </layout>

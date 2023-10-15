@@ -13,5 +13,6 @@
     <color name="grey">#C4C4C4</color> //flash menu background
     <color name="pink">#FFC1D1</color> //icon background
     <color name="dark_pink">#BD6D81</color> //important icon background
+    <color name="dark_pink2">#bda6ac</color> //important icon backgroundbda6ac
     <color name="white">#FFFFFFFF</color> //default background
 </resources>

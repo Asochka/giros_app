@@ -7,41 +7,69 @@
         android:layout_width="match_parent"
         android:layout_height="match_parent">
 
-        <EditText
-            android:id="@+id/editText_login"
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/layout_editText_Login"
             android:layout_width="220dp"
-            android:layout_height="45dp"
+            android:layout_height="wrap_content"
             android:layout_marginTop="150dp"
-            android:ems="10"
-            android:hint="Login"
-            android:textSize="16dp"
+            android:textColorHint="@color/dark_grey"
+            app:boxBackgroundColor="@color/white"
+            app:boxStrokeColor="@color/dirty_pink"
+            app:counterOverflowTextColor="@color/dark_grey"
+            app:hintTextColor="@color/dirty_pink"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toTopOf="parent" />
+            app:layout_constraintTop_toTopOf="parent">
 
-        <EditText
-            android:id="@+id/editTextPasswordLogin"
+            <EditText
+                android:id="@+id/editText_login"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:textColor="@color/black"
+                android:singleLine="true"
+                android:hint="Login"
+                android:textSize="18dp"/>
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/layoutPasswordLogin"
             android:layout_width="220dp"
-            android:layout_height="43dp"
-            android:layout_marginTop="15dp"
-            android:ems="10"
-            android:inputType="textPassword"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
             android:hint="Password"
-            android:textSize="16dp"
+            android:scrollbarSize="25dp"
+            android:textColorHint="@color/dark_grey"
+            app:boxBackgroundColor="@color/white"
+            app:boxStrokeColor="@color/dirty_pink"
+            app:hintTextColor="@color/dark_grey"
+            app:passwordToggleTint="@color/dark_grey"
+            app:passwordToggleEnabled="true"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/editText_login" />
+            app:layout_constraintTop_toBottomOf="@+id/layout_editText_Login">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/editTextPasswordLogin"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:textColor="@color/black"
+                android:inputType="textPassword"
+                android:singleLine="true"
+                android:textSize="18dp" />
+        </com.google.android.material.textfield.TextInputLayout>
 
         <CheckBox
-            android:id="@+id/checkBox"
+            android:id="@+id/remember_checkBox"
             android:layout_width="220dp"
             android:layout_height="40dp"
             android:layout_marginTop="4dp"
+            android:shadowColor="@color/dark_pink"
+            android:textColor="@color/black"
             android:text="Remember me"
             android:textSize="10dp"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/editTextPasswordLogin" />
+            app:layout_constraintTop_toBottomOf="@+id/layoutPasswordLogin" />
 
         <Button
             android:id="@+id/LogInButton"
@@ -49,11 +77,13 @@
             android:layout_height="45dp"
             android:layout_marginTop="4dp"
             android:alpha="0.5"
+            android:shadowColor="@color/dirty_pink"
             android:text="Log In"
+            android:textColor="@color/white"
             android:textSize="16dp"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/checkBox" />
+            app:layout_constraintTop_toBottomOf="@+id/remember_checkBox"/>
 
         <LinearLayout
             android:layout_width="220dp"

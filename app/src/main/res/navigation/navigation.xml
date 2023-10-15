@@ -3,23 +3,15 @@
     xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
-    android:id="@+id/navigation"
+    android:id="@+id/navigation_main"
     app:startDestination="@id/fragmentFirstEntrance">
 
     <fragment
         android:id="@+id/main_screen"
-        android:name="com.discopotatodevelopment.giros_app.FragmentMain"
-        android:label="Главная"
-        tools:layout="@layout/fragment_main_screen" >
+        android:name="com.discopotatodevelopment.giros_app.main.fragments.FragmentMain">
         <action
             android:id="@+id/action_main_screen_to_history_screen"
             app:destination="@id/history_screen" />
-        <action
-            android:id="@+id/action_main_screen_to_support_screen"
-            app:destination="@id/support_screen" />
-        <action
-            android:id="@+id/action_main_screen_to_login_screen"
-            app:destination="@id/login_screen" />
         <action
             android:id="@+id/action_main_screen_to_qrScan_screen"
             app:destination="@id/qrScan_screen" />
@@ -34,38 +26,27 @@
         <action
             android:id="@+id/action_main_screen_to_pay_dialog"
             app:destination="@id/pay_dialog" />
+        <action
+            android:id="@+id/action_main_screen_to_account_screen"
+            app:destination="@id/account_screen" />
     </fragment>
     <fragment
         android:id="@+id/history_screen"
-        android:name="com.discopotatodevelopment.giros_app.FragmentHistory"
-        android:label="История покупок"
-        tools:layout="@layout/fragment_history_screen" >
+        android:name="com.discopotatodevelopment.giros_app.main.fragments.FragmentHistory">
         <action
             android:id="@+id/action_history_screen_to_fragmentCheckInfo"
             app:destination="@id/fragmentCheckInfo" />
     </fragment>
     <fragment
-        android:id="@+id/login_screen"
-        android:name="com.discopotatodevelopment.giros_app.FragmentLogin"
-        android:label="Аккаунт"
-        tools:layout="@layout/fragment_login_screen" />
-    <fragment
-        android:id="@+id/support_screen"
-        android:name="com.discopotatodevelopment.giros_app.FragmentSupport"
-        android:label="Поддержка"
-        tools:layout="@layout/fragment_support_screen" />
-    <fragment
         android:id="@+id/qrScan_screen"
-        android:name="com.discopotatodevelopment.giros_app.FragmentScanqr"
-        tools:layout="@layout/fragment_qr_scan_screen" >
+        android:name="com.discopotatodevelopment.giros_app.main.fragments.FragmentScanqr">
         <action
             android:id="@+id/action_qrScan_screen_to_main_screen"
             app:destination="@id/main_screen" />
     </fragment>
     <fragment
         android:id="@+id/fragmentSignUp"
-        android:name="com.discopotatodevelopment.giros_app.FragmentSignUp"
-        tools:layout="@layout/fragment_sign_up">
+        android:name="com.discopotatodevelopment.giros_app.main.fragments.FragmentSignUp">
         <action
             android:id="@+id/action_fragmentSignUp_to_fragmentFirstEntrance"
             app:destination="@id/fragmentFirstEntrance" />
@@ -75,7 +56,7 @@
     </fragment>
     <dialog
         android:id="@+id/dishinfo_dialog"
-        android:name="com.discopotatodevelopment.giros_app.dishinfo_dialog"
+        android:name="com.discopotatodevelopment.giros_app.main.dialogs.dishinfo_dialog"
         android:label="dishinfo_dialog" >
         <action
             android:id="@+id/action_dishinfo_dialog_to_main_screen2"
@@ -104,8 +85,7 @@
     </dialog>
     <fragment
         android:id="@+id/fragmentFirstEntrance"
-        android:name="com.discopotatodevelopment.giros_app.FragmentFirstEntrance"
-        tools:layout="@layout/fragment_first_entrance" >
+        android:name="com.discopotatodevelopment.giros_app.main.fragments.FragmentFirstEntrance">
         <action
             android:id="@+id/action_fragmentFirstEntrance_to_main_screen"
             app:destination="@id/main_screen" />
@@ -118,9 +98,8 @@
     </fragment>
     <fragment
         android:id="@+id/fragmentForgotPass"
-        android:name="com.discopotatodevelopment.giros_app.FragmentForgotPass"
-        android:label="fragment_forgot_pass"
-        tools:layout="@layout/fragment_forgot_pass" >
+        android:name="com.discopotatodevelopment.giros_app.main.fragments.FragmentForgotPass"
+        android:label="fragment_forgot_pass">
         <action
             android:id="@+id/action_fragmentForgotPass_to_fragmentFirstEntrance"
             app:destination="@id/fragmentFirstEntrance" />
@@ -130,26 +109,97 @@
         <action
             android:id="@+id/action_fragmentForgotPass_to_fragmentResetPass"
             app:destination="@id/fragmentResetPass" />
-    </fragment>
-    <fragment
-        android:id="@+id/fragmentResetPass"
-        android:name="com.discopotatodevelopment.giros_app.FragmentResetPass"
-        android:label="fragment_reset_pass"
-        tools:layout="@layout/fragment_reset_pass" >
         <action
-            android:id="@+id/action_fragmentResetPass_to_fragmentFirstEntrance"
+            android:id="@+id/action_fragmentForgotPass_to_fragmentFirstEntrance2"
             app:destination="@id/fragmentFirstEntrance" />
     </fragment>
     <fragment
+        android:id="@+id/fragmentResetPass"
+        android:name="com.discopotatodevelopment.giros_app.main.fragments.FragmentResetPass"
+        android:label="fragment_reset_pass">
+        <action
+            android:id="@+id/action_fragmentResetPass_to_fragmentFirstEntrance"
+            app:destination="@id/fragmentFirstEntrance" />
+        <action
+            android:id="@+id/action_fragmentResetPass_to_fragmentForgotPass"
+            app:destination="@id/fragmentForgotPass" />
+    </fragment>
+    <fragment
         android:id="@+id/fragmentCheckInfo"
-        android:name="com.discopotatodevelopment.giros_app.FragmentCheckInfo"
-        android:label="fragment_check_info"
-        tools:layout="@layout/fragment_check_info" >
+        android:name="com.discopotatodevelopment.giros_app.main.fragments.FragmentCheckInfo"
+        android:label="fragment_check_info">
         <action
             android:id="@+id/action_fragmentCheckInfo_to_history_screen"
             app:destination="@id/history_screen" />
         <action
             android:id="@+id/action_fragmentCheckInfo_to_dishinfo_dialog"
             app:destination="@id/dishinfo_dialog" />
+    </fragment>
+    <fragment
+        android:id="@+id/account_screen"
+        android:name="com.discopotatodevelopment.giros_app.account.fragments.FragmentAccount"
+        android:label="FragmentAccount" >
+        <action
+            android:id="@+id/action_account_screen_to_fragmentEdit"
+            app:destination="@id/fragmentEdit" />
+        <action
+            android:id="@+id/action_account_screen_to_fragmentNotifications"
+            app:destination="@id/fragmentNotifications" />
+        <action
+            android:id="@+id/action_account_screen_to_fragmentPayMethod"
+            app:destination="@id/fragmentPayMethod" />
+        <action
+            android:id="@+id/action_account_screen_to_fragmentStatisitics"
+            app:destination="@id/fragmentStatisitics" />
+        <action
+            android:id="@+id/action_account_screen_to_dialogLogOut"
+            app:destination="@id/dialogLogOut" />
+        <action
+            android:id="@+id/action_account_screen_to_fragmentFirstEntrance"
+            app:destination="@id/fragmentFirstEntrance" />
+        <action
+            android:id="@+id/action_account_screen_to_fragmentAskQuest"
+            app:destination="@id/fragmentAskQuest" />
+    </fragment>
+    <fragment
+        android:id="@+id/fragmentEdit"
+        android:name="com.discopotatodevelopment.giros_app.account.fragments.FragmentEdit"
+        android:label="fragment_edit"
+        tools:layout="@layout/fragment_edit" >
+        <action
+            android:id="@+id/action_fragmentEdit_to_account_screen"
+            app:destination="@id/account_screen" />
+    </fragment>
+    <fragment
+        android:id="@+id/fragmentNotifications"
+        android:name="com.discopotatodevelopment.giros_app.account.fragments.FragmentNotifications"
+        android:label="fragment_notifications"
+        tools:layout="@layout/fragment_notifications" />
+    <fragment
+        android:id="@+id/fragmentPayMethod"
+        android:name="com.discopotatodevelopment.giros_app.account.fragments.FragmentPayMethod"
+        android:label="fragment_pay_method"
+        tools:layout="@layout/fragment_pay_method" />
+    <fragment
+        android:id="@+id/fragmentStatisitics"
+        android:name="com.discopotatodevelopment.giros_app.account.fragments.statistics.FragmentStatisitics"
+        android:label="fragment_statisitics"
+        tools:layout="@layout/fragment_statisitics" >
+        <action
+            android:id="@+id/action_fragmentStatisitics_to_account_screen"
+            app:destination="@id/account_screen" />
+    </fragment>
+    <dialog
+        android:id="@+id/dialogLogOut"
+        android:name="com.discopotatodevelopment.giros_app.account.dialogs.DialogLogOut"
+        android:label="DialogLogOut" >
+    </dialog>
+    <fragment
+        android:id="@+id/fragmentAskQuest"
+        android:name="com.discopotatodevelopment.giros_app.account.fragments.FragmentAskQuest"
+        android:label="FragmentAskQuest" >
+        <action
+            android:id="@+id/action_fragmentAskQuest_to_account_screen"
+            app:destination="@id/account_screen" />
     </fragment>
 </navigation>

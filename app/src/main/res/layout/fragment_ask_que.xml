@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <include layout="@layout/menu_bar_main"/>
+
+        <TextView
+            android:id="@+id/textView_supp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="180dp"
+            android:text="What's up?"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/spinner_menu"
+            style="@style/Widget.MaterialComponents.TextInputLayout.FilledBox.ExposedDropdownMenu"
+            android:layout_width="280dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="4dp"
+            android:hint="Choose a subject"
+            android:textSize="16dp"
+            android:textColorHint="@color/dark_grey"
+            app:boxBackgroundColor="@color/white"
+            app:boxStrokeColor="@color/dirty_pink"
+            app:hintTextColor="@color/dark_grey"
+            app:passwordToggleTint="@color/dark_grey"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textView_supp">
+
+            <AutoCompleteTextView
+                android:id="@+id/spinner"
+                android:layout_width="fill_parent"
+                android:layout_height="match_parent"
+                android:popupBackground="@color/white"
+                android:textColor="@color/black"
+                android:inputType="none"/>
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/editTextSupp_1_layout"
+            android:layout_width="280dp"
+            android:layout_height="220dp"
+            android:layout_marginTop="4dp"
+            android:textColorHint="@color/dark_grey"
+            app:boxBackgroundColor="@color/white"
+            app:boxStrokeColor="@color/dirty_pink"
+            app:counterOverflowTextColor="@color/dark_grey"
+            app:hintTextColor="@color/dirty_pink"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/spinner_menu">
+
+            <EditText
+                android:id="@+id/editTextSupp_1"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:textColor="@color/black"
+                android:textSize="16dp"/>
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <Button
+            android:id="@+id/button_send"
+            android:layout_width="220dp"
+            android:layout_height="45dp"
+            android:layout_marginTop="4dp"
+            android:alpha="0.5"
+            android:text="Send"
+            android:textSize="16dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/editTextSupp_1_layout" />
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</layout>

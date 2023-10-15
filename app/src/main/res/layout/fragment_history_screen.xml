@@ -7,6 +7,14 @@
         android:layout_width="match_parent"
         android:layout_height="match_parent">
 
+        <ProgressBar
+            android:id="@+id/loadBar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="100dp"
+            android:indeterminate="true"
+            android:layout_gravity="center"/>
+
         <androidx.constraintlayout.widget.ConstraintLayout
             android:id="@+id/constraintLayout"
             android:layout_width="match_parent"
@@ -16,7 +24,7 @@
                 android:id="@+id/check_recyclerView"
                 android:layout_width="373dp"
                 android:layout_height="469dp"
-                android:layout_marginTop="45dp"
+                android:layout_marginTop="15dp"
                 android:layout_marginBottom="20dp"
                 android:padding="5dp"
                 app:layout_constraintEnd_toEndOf="parent"
@@ -28,6 +36,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="180dp"
+                android:visibility="gone"
                 android:text="Кажется, вам стоит подкрепиться"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintStart_toStartOf="parent"

@@ -5,12 +5,15 @@
 
     <data>
         <variable name="datePurch" type="String"/>
+        <variable name="timePurch" type="String"/>
         <variable name="sum" type="String"/>
         <variable name="id_check" type="Integer"/>
+        <variable name="calories" type="String"/>
+        <variable name="calories_percent" type="String"/>
     </data>
 
     <com.google.android.material.card.MaterialCardView
-        android:id="@+id/dish_card"
+        android:id="@+id/dish_card_check"
         android:layout_width="match_parent"
         android:layout_height="110dp"
         app:cardElevation="12dp"
@@ -32,33 +35,108 @@
                 android:id="@+id/check_amount"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_marginStart="10dp"
-                android:layout_marginBottom="26dp"
+                android:layout_marginEnd="5dp"
+                android:layout_marginTop="5dp"
+                android:textSize="22dp"
                 android:text="@{sum}"
-                app:layout_constraintBottom_toBottomOf="parent"
-                app:layout_constraintStart_toStartOf="parent" />
+                app:layout_constraintEnd_toStartOf="@+id/check_amount_str2"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <TextView
+                android:id="@+id/check_amount_str2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:layout_marginEnd="10dp"
+                android:text="₽"
+                android:textSize="22dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
 
             <TextView
                 android:id="@+id/check_date"
-                android:layout_width="145dp"
-                android:layout_height="34dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
                 android:layout_marginTop="5dp"
+                android:layout_marginLeft="10dp"
                 android:fontFamily="@font/sourcesans_regular"
+                android:textSize="24dp"
                 android:text="@{datePurch}"
-                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintStart_toStartOf="parent"/>
+
+            <TextView
+                android:id="@+id/check_time"
+                android:layout_width="100dp"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/sourcesans_regular"
+                android:text="@{timePurch}"
+                android:textSize="16dp"
+                android:layout_marginTop="13dp"
+                android:layout_marginLeft="3dp"
+                app:layout_constraintStart_toEndOf="@+id/check_date"
                 app:layout_constraintTop_toTopOf="parent" />
 
-            <ImageButton
-                android:id="@+id/check_info"
-                android:layout_width="48dp"
-                android:layout_height="48dp"
-                android:background="@android:color/transparent"
-                android:contentDescription="diname"
+            <TextView
+                android:id="@+id/textView10"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:layout_marginEnd="10dp"
+                android:text="@{calories}"
                 app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintHorizontal_bias="1.0"
-                app:layout_constraintStart_toEndOf="@+id/check_amount"
-                app:layout_constraintTop_toTopOf="parent"
-                app:srcCompat="@drawable/information_box_outline" />
+                app:layout_constraintTop_toBottomOf="@+id/check_amount_str2" />
+
+            <TextView
+                android:id="@+id/textView11"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:layout_marginEnd="10dp"
+                android:text="@{calories_percent}"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/textView10" />
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:layout_marginLeft="10dp"
+                android:orientation="vertical"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/check_date">
+
+                <TextView
+                    android:id="@+id/firstDishInCheck"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text=""
+                    android:alpha="0.8"
+                    android:textSize="10dp"
+                    app:layout_constraintEnd_toEndOf="parent" />
+
+                <TextView
+                    android:id="@+id/secondDishInCheck"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text=""
+                    android:alpha="0.6"
+                    android:textSize="10dp"
+                    android:layout_marginTop="4dp"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/firstDishInCheck" />
+
+                <TextView
+                    android:id="@+id/thirdDishInCheck"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text=""
+                    android:alpha="0.4"
+                    android:textSize="10dp"
+                    android:layout_marginTop="4dp"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/secondDishInCheck" />
+            </LinearLayout>
 
         </androidx.constraintlayout.widget.ConstraintLayout>
     </com.google.android.material.card.MaterialCardView>

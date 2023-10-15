@@ -19,12 +19,11 @@
             <androidx.recyclerview.widget.RecyclerView
                 android:id="@+id/dish_recyclerView"
                 android:layout_width="373dp"
-                android:layout_height="469dp"
-                android:layout_marginTop="20dp"
+                android:layout_height="400dp"
+                android:layout_marginTop="5dp"
                 android:layout_marginBottom="20dp"
-                android:padding="5dp"
+                android:padding="10dp"
                 app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
-                app:layout_constraintBottom_toTopOf="@+id/pay_linearLayout"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toBottomOf="@+id/qrButton" />
@@ -33,11 +32,11 @@
                 android:id="@+id/pay_linearLayout"
                 android:layout_width="330dp"
                 android:layout_height="154dp"
-                android:layout_marginBottom="20dp"
                 android:orientation="vertical"
-                app:layout_constraintBottom_toBottomOf="parent"
+                android:layout_marginTop="20dp"
                 app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintStart_toStartOf="parent">
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/dish_recyclerView">
 
                 <TextView
                     android:id="@+id/amount_pay"
@@ -46,16 +45,16 @@
                     android:layout_gravity="center"
                     android:layout_margin="@dimen/margin_amount_pay"
                     android:text="@{amount}"
-                    android:textSize="28dp"/>
+                    android:textSize="28dp" />
 
                 <Button
                     android:id="@+id/toPay"
                     android:layout_width="wrap_content"
                     android:layout_height="81dp"
                     android:layout_gravity="center"
+                    android:fontFamily="@font/sourcesans_semibold"
                     android:text="@string/topay_button"
-                    android:textSize="28dp"
-                    android:fontFamily="@font/sourcesans_semibold"/>
+                    android:textSize="28dp" />
             </LinearLayout>
 
             <ImageButton
@@ -63,11 +62,11 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_margin="5dp"
-                android:background="@android:color/transparent"
-                android:contentDescription="qrstartbut"
+                android:background="@color/dark_pink"
+                android:contentDescription="qrstartbutton"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintTop_toTopOf="parent"
-                app:srcCompat="@drawable/qrcode_scan" />
+                app:srcCompat="@drawable/qrcode" />
 
             <TextView
                 android:id="@+id/start_info"
