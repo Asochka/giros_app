@@ -14,7 +14,7 @@
             android:layout_height="wrap_content"
             android:layout_marginTop="80dp"
             android:textColorHint="@color/dark_grey"
-            app:boxBackgroundColor="@color/white"
+            app:boxBackgroundColor="?attr/textInputLayoutBackground"
             app:boxStrokeColor="@color/dirty_pink"
             app:counterOverflowTextColor="@color/dark_grey"
             app:hintTextColor="@color/dirty_pink"
@@ -26,7 +26,6 @@
                 android:id="@+id/textView_name_signup"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
-                android:textColor="@color/black"
                 android:singleLine="true"
                 android:hint="Name"
                 android:textSize="16dp"/>
@@ -38,7 +37,7 @@
             android:layout_height="wrap_content"
             android:layout_marginTop="5dp"
             android:textColorHint="@color/dark_grey"
-            app:boxBackgroundColor="@color/white"
+            app:boxBackgroundColor="?attr/textInputLayoutBackground"
             app:boxStrokeColor="@color/dirty_pink"
             app:counterOverflowTextColor="@color/dark_grey"
             app:hintTextColor="@color/dirty_pink"
@@ -50,7 +49,6 @@
                 android:id="@+id/textView_login_lastname_signup"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
-                android:textColor="@color/black"
                 android:singleLine="true"
                 android:hint="Lastname"
                 android:textSize="16dp"/>
@@ -62,7 +60,7 @@
             android:layout_height="wrap_content"
             android:layout_marginTop="5dp"
             android:textColorHint="@color/dark_grey"
-            app:boxBackgroundColor="@color/white"
+            app:boxBackgroundColor="?attr/textInputLayoutBackground"
             app:boxStrokeColor="@color/dirty_pink"
             app:counterOverflowTextColor="@color/dark_grey"
             app:hintTextColor="@color/dirty_pink"
@@ -74,7 +72,6 @@
                 android:id="@+id/textView_email_signup"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
-                android:textColor="@color/black"
                 android:singleLine="true"
                 android:hint="Email"
                 android:textSize="16dp"/>
@@ -86,7 +83,7 @@
             android:layout_height="wrap_content"
             android:layout_marginTop="5dp"
             android:textColorHint="@color/dark_grey"
-            app:boxBackgroundColor="@color/white"
+            app:boxBackgroundColor="?attr/textInputLayoutBackground"
             app:boxStrokeColor="@color/dirty_pink"
             app:counterOverflowTextColor="@color/dark_grey"
             app:hintTextColor="@color/dirty_pink"
@@ -98,7 +95,6 @@
                 android:id="@+id/textView_login_phone_signup"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
-                android:textColor="@color/black"
                 android:singleLine="true"
                 android:hint="Phone number"
                 android:textSize="16dp"/>
@@ -110,7 +106,7 @@
             android:layout_height="wrap_content"
             android:layout_marginTop="5dp"
             android:textColorHint="@color/dark_grey"
-            app:boxBackgroundColor="@color/white"
+            app:boxBackgroundColor="?attr/textInputLayoutBackground"
             app:boxStrokeColor="@color/dirty_pink"
             app:hintTextColor="@color/dark_grey"
             app:passwordToggleEnabled="true"
@@ -124,7 +120,6 @@
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
                 android:inputType="textPassword"
-                android:textColor="@color/black"
                 android:singleLine="true"
                 android:hint="Password"
                 android:textSize="16dp"/>
@@ -136,7 +131,7 @@
             android:layout_height="wrap_content"
             android:layout_marginTop="5dp"
             android:textColorHint="@color/dark_grey"
-            app:boxBackgroundColor="@color/white"
+            app:boxBackgroundColor="?attr/textInputLayoutBackground"
             app:boxStrokeColor="@color/dirty_pink"
             app:hintTextColor="@color/dark_grey"
             app:passwordToggleEnabled="true"
@@ -150,7 +145,6 @@
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
                 android:hint="Type password again"
-                android:textColor="@color/black"
                 android:singleLine="true"
                 android:inputType="textPassword"
                 android:textSize="16dp"/>
@@ -171,7 +165,6 @@
                 android:layout_width="160dp"
                 android:layout_height="40dp"
                 android:shadowColor="@color/dark_pink"
-                android:textColor="@color/black"
                 android:text="Accept all terms"
                 android:textSize="10dp"/>
             <Button
@@ -190,7 +183,6 @@
             android:text="Remember me"
             android:textSize="10dp"
             android:shadowColor="@color/dark_pink"
-            android:textColor="@color/black"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/term_layout" />

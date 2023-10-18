@@ -14,7 +14,7 @@
             android:layout_height="wrap_content"
             android:layout_marginTop="220dp"
             android:textColorHint="@color/dark_grey"
-            app:boxBackgroundColor="@color/white"
+            app:boxBackgroundColor="?attr/textInputLayoutBackground"
             app:boxStrokeColor="@color/dirty_pink"
             app:hintTextColor="@color/dark_grey"
             app:passwordToggleEnabled="true"
@@ -28,7 +28,6 @@
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
                 android:inputType="textPassword"
-                android:textColor="@color/black"
                 android:singleLine="true"
                 android:hint="Password"
                 android:textSize="16dp"/>
@@ -40,7 +39,7 @@
             android:layout_height="wrap_content"
             android:layout_marginTop="5dp"
             android:textColorHint="@color/dark_grey"
-            app:boxBackgroundColor="@color/white"
+            app:boxBackgroundColor="?attr/textInputLayoutBackground"
             app:boxStrokeColor="@color/dirty_pink"
             app:hintTextColor="@color/dark_grey"
             app:passwordToggleEnabled="true"
@@ -54,7 +53,6 @@
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
                 android:inputType="textPassword"
-                android:textColor="@color/black"
                 android:singleLine="true"
                 android:hint="Type password again"
                 android:textSize="16dp"/>

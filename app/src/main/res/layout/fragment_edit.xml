@@ -24,7 +24,7 @@
             android:layout_width="220dp"
             android:layout_height="wrap_content"
             android:layout_marginTop="80dp"
-            app:boxBackgroundColor="@null"
+            app:boxBackgroundColor="?attr/textInputLayoutBackground"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/imageView_avatar_edit">
@@ -42,7 +42,7 @@
             android:layout_width="220dp"
             android:layout_height="wrap_content"
             android:layout_marginTop="5dp"
-            app:boxBackgroundColor="@null"
+            app:boxBackgroundColor="?attr/textInputLayoutBackground"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/layout_textView_name_account">
@@ -60,7 +60,7 @@
             android:layout_width="220dp"
             android:layout_height="wrap_content"
             android:layout_marginTop="5dp"
-            app:boxBackgroundColor="@null"
+            app:boxBackgroundColor="?attr/textInputLayoutBackground"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/layout_textView_email_account">
@@ -78,7 +78,7 @@
             android:layout_width="220dp"
             android:layout_height="wrap_content"
             android:layout_marginTop="5dp"
-            app:boxBackgroundColor="@null"
+            app:boxBackgroundColor="?attr/textInputLayoutBackground"
             app:passwordToggleEnabled="true"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"

@@ -24,4 +24,6 @@
 
         <attr name="pieChartTextAmount" format="string"/>
     </declare-styleable>
+    <attr name="textInputLayoutBackground" format="reference" />
+    <attr name="cardViewBackground" format="reference" />
 </resources>

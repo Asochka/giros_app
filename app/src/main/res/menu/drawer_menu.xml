@@ -1,16 +1,20 @@
 <?xml version="1.0" encoding="utf-8"?>
 <menu
     xmlns:android="http://schemas.android.com/apk/res/android">
+
     <item
         android:id="@+id/main_screen"
         android:icon="@drawable/house"
+        android:background="?attr/cardViewBackground"
         android:title="@string/main_window"/>
     <item
         android:id="@+id/history_screen"
         android:icon="@drawable/clockcounterclockwise"
+        android:background="?attr/cardViewBackground"
         android:title="@string/history"/>
     <item
         android:id="@+id/account_screen"
         android:icon="@drawable/user"
+        android:background="?attr/cardViewBackground"
         android:title="@string/login"/>
 </menu>

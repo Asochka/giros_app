@@ -1,9 +1,7 @@
 package com.discopotatodevelopment.giros_app.main.fragments
 
 import android.Manifest
-import android.content.Intent
 import android.content.pm.PackageManager
-import android.net.Uri
 import android.os.Bundle
 import android.os.StrictMode
 import android.view.View
@@ -12,14 +10,11 @@ import androidx.core.content.ContextCompat
 import androidx.fragment.app.Fragment
 import androidx.fragment.app.setFragmentResultListener
 import androidx.lifecycle.lifecycleScope
-import androidx.navigation.fragment.findNavController
 import androidx.recyclerview.widget.LinearLayoutManager
 import com.discopotatodevelopment.giros_app.*
-import com.discopotatodevelopment.giros_app.account.fragments.FragmentLogOutBottomSheet
 import com.discopotatodevelopment.giros_app.dataCoordinator.DataCoordinator
 import com.discopotatodevelopment.giros_app.dataCoordinator.getuserID
 import com.discopotatodevelopment.giros_app.databinding.FragmentMainScreenBinding
-import com.discopotatodevelopment.giros_app.databinding.FragmentQrpayBottomSheetBinding
 import com.discopotatodevelopment.giros_app.main.adapters.AdapterDishInfo
 import kotlinx.coroutines.launch
 import java.sql.DriverManager

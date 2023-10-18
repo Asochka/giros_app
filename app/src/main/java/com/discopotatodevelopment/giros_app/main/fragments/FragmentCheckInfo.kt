@@ -14,7 +14,6 @@ import com.discopotatodevelopment.giros_app.*
 import com.discopotatodevelopment.giros_app.databinding.FragmentCheckInfoBinding
 import com.discopotatodevelopment.giros_app.main.adapters.AdapterDishInCheck
 import java.sql.DriverManager
-import java.text.DecimalFormat
 
 class FragmentCheckInfo: Fragment() {
 
