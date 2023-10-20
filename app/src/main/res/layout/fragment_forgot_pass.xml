@@ -27,7 +27,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
                 android:singleLine="true"
-                android:hint="Email or phone"
+                android:hint="Почта или телефон"
                 android:textSize="16dp"/>
         </com.google.android.material.textfield.TextInputLayout>
 
@@ -37,7 +37,7 @@
             android:layout_height="45dp"
             android:layout_marginTop="4dp"
             android:alpha="0.5"
-            android:text="Retrieve code"
+            android:text="Получить код"
             android:textSize="16dp"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
@@ -54,18 +54,18 @@
 
             <Button
                 android:id="@+id/SignUpButton"
-                android:layout_width="wrap_content"
+                android:layout_width="100dp"
                 android:layout_height="match_parent"
                 android:layout_marginEnd="10dp"
-                android:text="Sign Up"
+                android:text="Регистрация"
                 android:textSize="8dp" />
 
             <Button
                 android:id="@+id/LogInButton"
-                android:layout_width="wrap_content"
+                android:layout_width="100dp"
                 android:layout_height="match_parent"
-                android:layout_marginStart="35dp"
-                android:text="Log In"
+                android:layout_marginStart="10dp"
+                android:text="Вход"
                 android:textSize="8dp" />
         </LinearLayout>
 

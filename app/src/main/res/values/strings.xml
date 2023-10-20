@@ -1,14 +1,14 @@
 <resources>
     <string name="app_name">GIROS</string>
-    <string name="topay_button">Purchase</string>
-    <string name="main_window">Home</string>
-    <string name="support">Support</string>
-    <string name="login">Account</string>
-    <string name="history">History</string>
+    <string name="topay_button">Оплата</string>
+    <string name="main_window">Главная</string>
+    <string name="support">Поддержка</string>
+    <string name="login">Аккаунт</string>
+    <string name="history">История</string>
     <!-- TODO: Remove or change this placeholder text -->
     <string name="hello_blank_fragment">Hello blank fragment</string>
 
-    <string name="analyticalPieChartAmount">Total ccal</string>
+    <string name="analyticalPieChartAmount">Всего ккал</string>
 
     <string-array name="analyticalPieChartColorArray">
         <item>#E480F4</item>

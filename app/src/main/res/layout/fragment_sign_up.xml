@@ -27,7 +27,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
                 android:singleLine="true"
-                android:hint="Name"
+                android:hint="имя"
                 android:textSize="16dp"/>
         </com.google.android.material.textfield.TextInputLayout>
 
@@ -50,7 +50,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
                 android:singleLine="true"
-                android:hint="Lastname"
+                android:hint="Фамилия"
                 android:textSize="16dp"/>
         </com.google.android.material.textfield.TextInputLayout>
 
@@ -73,7 +73,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
                 android:singleLine="true"
-                android:hint="Email"
+                android:hint="Почта"
                 android:textSize="16dp"/>
         </com.google.android.material.textfield.TextInputLayout>
 
@@ -96,7 +96,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
                 android:singleLine="true"
-                android:hint="Phone number"
+                android:hint="Телефон"
                 android:textSize="16dp"/>
         </com.google.android.material.textfield.TextInputLayout>
 
@@ -121,7 +121,7 @@
                 android:layout_height="match_parent"
                 android:inputType="textPassword"
                 android:singleLine="true"
-                android:hint="Password"
+                android:hint="Пароль"
                 android:textSize="16dp"/>
         </com.google.android.material.textfield.TextInputLayout>
 
@@ -144,7 +144,7 @@
                 android:id="@+id/editTextPasswordSignup_2"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
-                android:hint="Type password again"
+                android:hint="Повторите пароль"
                 android:singleLine="true"
                 android:inputType="textPassword"
                 android:textSize="16dp"/>
@@ -162,16 +162,16 @@
 
             <CheckBox
                 android:id="@+id/checkBox_terms"
-                android:layout_width="160dp"
+                android:layout_width="135dp"
                 android:layout_height="40dp"
                 android:shadowColor="@color/dark_pink"
-                android:text="Accept all terms"
+                android:text="Принять соглашения"
                 android:textSize="10dp"/>
             <Button
                 android:id="@+id/button_terms"
                 android:layout_width="wrap_content"
                 android:layout_height="34dp"
-                android:text="Terms"
+                android:text="Соглашения"
                 android:textSize="7dp"/>
         </LinearLayout>
 
@@ -180,7 +180,7 @@
             android:layout_width="220dp"
             android:layout_height="40dp"
             android:layout_marginTop="2dp"
-            android:text="Remember me"
+            android:text="Запомнить меня"
             android:textSize="10dp"
             android:shadowColor="@color/dark_pink"
             app:layout_constraintEnd_toEndOf="parent"
@@ -192,7 +192,7 @@
             android:layout_width="220dp"
             android:layout_height="45dp"
             android:layout_marginTop="6dp"
-            android:text="Sign Up"
+            android:text="Регистрация"
             android:textSize="16dp"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
@@ -212,9 +212,9 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_gravity="center|start"
-                android:layout_marginLeft="9dp"
-                android:layout_marginEnd="9dp"
-                android:text="Registred yet?"
+                android:layout_marginLeft="8dp"
+                android:layout_marginEnd="5dp"
+                android:text="Есть аккаунт?"
                 android:textSize="8dp"/>
 
             <Button
@@ -222,7 +222,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="34dp"
                 android:layout_gravity="center|right"
-                android:text="Log In"
+                android:text="Вход"
                 android:textSize="7dp"/>
         </LinearLayout>
 

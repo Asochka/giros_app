@@ -2,7 +2,7 @@
     <!-- Base application theme. -->
     <style name="Theme.Giros_app" parent="Theme.MaterialComponents.DayNight.NoActionBar">
       <!--  <item name="android:background">@color/white</item> -->
-        <item name="android:windowBackground">@color/white</item>
+        <item name="android:windowBackground">@color/light_mode</item>
         <item name="android:textColor">@color/black</item>
 
         <!-- <item name="android:colorBackground">@color/dark_grey</item> -->
@@ -10,8 +10,8 @@
         <item name="colorPrimary">@color/dark_pink</item>
         <item name="colorPrimaryVariant">@color/black</item>
         <item name="colorOnPrimary">@color/white</item>
-        <item name="textInputLayoutBackground">@color/white</item>
-        <item name="cardViewBackground">@color/light_grey</item>
+        <item name="textInputLayoutBackground">@color/light_mode</item>
+        <item name="cardViewBackground">@color/white</item>
         <!-- Secondary brand color. -->
         <item name="colorSecondary">@color/black</item>
         <item name="colorSecondaryVariant">@color/black</item>

@@ -13,13 +13,4 @@
         <item name="android:backgroundTint">@color/dark_pink</item> <!-- Для цвета фона -->
         <item name="android:radius">10dp</item> <!-- Для закругленных углов -->
     </style>
-<!--
-    <style name="LightTheme" parent="Theme.AppCompat.Light">
-        <item name="textInputLayoutBackground">@color/white</item>
-    </style>
-
-    <style name="DarkTheme" parent="Theme.AppCompat">
-        <item name="textInputLayoutBackground">@color/pink</item>
-    </style>
--->
 </resources>

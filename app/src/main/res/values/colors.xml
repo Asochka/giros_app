@@ -4,9 +4,9 @@
     <color name="dirty_pink">#8A616C</color> //important text
     <color name="dark_grey">#878688</color> //other text
     <color name="dark_mode">#3c3f41</color>
-    <color name="dark_mode_card">#36393a</color>
+    <color name="dark_mode_card">#474a4d</color>  // ex-36393a
     <color name="grey">#C4C4C4</color> //flash menu background
-    <color name="light_grey">#f3f6f4</color>
+    <color name="light_mode">#f3f6f4</color>
     <color name="new_grey">#666b6e</color> //flash menu background
     <color name="pink">#FFC1D1</color> //icon background
     <color name="dark_pink">#BD6D81</color> //important icon background

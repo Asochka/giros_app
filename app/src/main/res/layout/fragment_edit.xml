@@ -8,16 +8,35 @@
         android:layout_width="match_parent">
         <include layout="@layout/menu_bar_main"/>
 
-        <com.google.android.material.imageview.ShapeableImageView
-            android:id="@+id/imageView_avatar_edit"
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/imageView_avatar_edit_place"
             android:layout_width="100sp"
             android:layout_height="100sp"
             android:layout_marginTop="70dp"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toTopOf="parent"
-            app:srcCompat="@drawable/salad_96"
-            app:shapeAppearanceOverlay="@style/ShapeAppearanceOverlay.App.CornerRound"/>
+            app:layout_constraintTop_toTopOf="parent">
+
+            <ProgressBar
+                android:id="@+id/loadBar"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:indeterminate="true"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <com.google.android.material.imageview.ShapeableImageView
+                android:id="@+id/avatar"
+                android:layout_width="100sp"
+                android:layout_height="100sp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:shapeAppearanceOverlay="@style/ShapeAppearanceOverlay.App.CornerRound" />
+        </androidx.constraintlayout.widget.ConstraintLayout>
 
         <com.google.android.material.textfield.TextInputLayout
             android:id="@+id/layout_textView_name_account"
@@ -27,13 +46,13 @@
             app:boxBackgroundColor="?attr/textInputLayoutBackground"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/imageView_avatar_edit">
+            app:layout_constraintTop_toBottomOf="@+id/imageView_avatar_edit_place">
 
             <EditText
                 android:id="@+id/textView_name_signup"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
-                android:hint="Name"
+                android:hint="Имя"
                 android:textSize="16dp"/>
         </com.google.android.material.textfield.TextInputLayout>
 
@@ -51,7 +70,7 @@
                 android:id="@+id/textView_email_signup"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
-                android:hint="Email"
+                android:hint="Почта"
                 android:textSize="16dp"/>
         </com.google.android.material.textfield.TextInputLayout>
 
@@ -69,7 +88,7 @@
                 android:id="@+id/textView_login_phone_signup"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
-                android:hint="Phone number"
+                android:hint="Телефон"
                 android:textSize="16dp"/>
         </com.google.android.material.textfield.TextInputLayout>
 
@@ -89,7 +108,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
                 android:inputType="textPassword"
-                android:hint="Password"
+                android:hint="Пароль"
                 android:textSize="16dp"/>
         </com.google.android.material.textfield.TextInputLayout>
 

@@ -68,7 +68,7 @@ class FragmentAccount : Fragment() {
             }
 
             termsConstraint.setOnClickListener {
-                val uris = Uri.parse("https://owxcfcjmsnqnnwxlexsf.supabase.co/storage/v1/object/sign/User%20Terms/UserTerms.pdf?token=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1cmwiOiJVc2VyIFRlcm1zL1VzZXJUZXJtcy5wZGYiLCJpYXQiOjE2OTQ3OTU4MDAsImV4cCI6MTY5NzM4NzgwMH0.KTWjV72ZHmEKogUfU-bljoUErV-iokcimcjUJ89Eneg&t=2023-09-15T16%3A36%3A40.279Z")
+                val uris = Uri.parse("https://owxcfcjmsnqnnwxlexsf.supabase.co/storage/v1/object/public/User%20Terms/UserTerms.pdf?t=2023-10-19T13%3A42%3A51.403Z")
                 val intents = Intent(Intent.ACTION_VIEW, uris)
                 val bundle = Bundle()
                 bundle.putBoolean("new_window", true)
