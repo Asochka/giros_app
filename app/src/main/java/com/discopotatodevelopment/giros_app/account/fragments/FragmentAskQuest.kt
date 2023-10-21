@@ -24,7 +24,7 @@ class FragmentAskQuest: Fragment() {
 
     override fun onStart() {
         super.onStart()
-        val items = listOf("Personal details", "Errors and bugs", "Suggestions", "Other")
+        val items = listOf("Персональные данные", "Ошибки", "Предложения", "Другое")
         val adapter = ArrayAdapter(requireContext(), R.layout.list_item_supp, items)
         (binding.spinnerMenu.editText as? AutoCompleteTextView)?.setAdapter(adapter)
     }
@@ -36,7 +36,7 @@ class FragmentAskQuest: Fragment() {
         val toolbar = view.findViewById<Toolbar>(R.id.toolbar)
         (activity as AppCompatActivity).setSupportActionBar(toolbar)
         (activity as ActivityMain).bottomNav.visibility = View.GONE
-        (activity as? AppCompatActivity)?.supportActionBar?.title = "Contact Us"
+        (activity as? AppCompatActivity)?.supportActionBar?.title = "Свяжитесь с нами"
 
         view.findViewById<Toolbar>(R.id.toolbar).apply {
             setNavigationIcon(com.google.android.material.R.drawable.material_ic_keyboard_arrow_left_black_24dp)

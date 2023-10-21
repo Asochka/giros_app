@@ -30,7 +30,7 @@ class FragmentCheckInfo: Fragment() {
         (activity as ActivityMain).bottomNav.visibility = View.GONE
 
         val id_check = arguments?.getString("requestKey_idCheck")
-        (activity as? AppCompatActivity)?.supportActionBar?.title = "Check № $id_check"
+        (activity as? AppCompatActivity)?.supportActionBar?.title = "Чек № $id_check"
 
         view.findViewById<Toolbar>(R.id.toolbar).apply {
             setNavigationIcon(com.google.android.material.R.drawable.material_ic_keyboard_arrow_left_black_24dp)

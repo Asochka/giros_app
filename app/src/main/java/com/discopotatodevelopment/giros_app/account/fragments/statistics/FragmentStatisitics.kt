@@ -21,7 +21,7 @@ class FragmentStatisitics : Fragment() {
     override fun onStart() {
         super.onStart()
         binding.analyticalPieChart1.setDataChart(
-            listOf(Pair(4, "Protein"), Pair(6, "Fats"), Pair(6, "Carbohydrates")))
+            listOf(Pair(4, "Белки"), Pair(6, "Жиры"), Pair(6, "Углеводы")))
         binding.analyticalPieChart1.startAnimation()
     }
 
@@ -32,7 +32,7 @@ class FragmentStatisitics : Fragment() {
         (activity as AppCompatActivity).setSupportActionBar(toolbar)
         (activity as ActivityMain).bottomNav.visibility = View.GONE
 
-        (activity as? AppCompatActivity)?.supportActionBar?.title = "Ur stats"
+        (activity as? AppCompatActivity)?.supportActionBar?.title = "Статистика"
 
         view.findViewById<Toolbar>(R.id.toolbar).apply {
             setNavigationIcon(com.google.android.material.R.drawable.material_ic_keyboard_arrow_left_black_24dp)

@@ -6,7 +6,7 @@ import kotlinx.parcelize.Parcelize
 @Parcelize
 data class DishInfoToInfo(
     val name_toinfo_cl: String? = null,
-    val calories_toinfo_cl: Float,
+    val calories_toinfo_cl: String,
     val p_toinfo_cl: String? = null,
     val f_toinfo_cl: String? = null,
     val c_toinfo_cl: String? = null,

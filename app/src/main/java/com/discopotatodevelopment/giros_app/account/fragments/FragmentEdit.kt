@@ -42,7 +42,7 @@ class FragmentEdit : Fragment() {
         (activity as AppCompatActivity).setSupportActionBar(toolbar)
         (activity as ActivityMain).bottomNav.visibility = View.GONE
 
-        (activity as? AppCompatActivity)?.supportActionBar?.title = "Edit profile"
+        (activity as? AppCompatActivity)?.supportActionBar?.title = "Редактировать"
 
         view.findViewById<Toolbar>(R.id.toolbar).apply {
             setNavigationIcon(com.google.android.material.R.drawable.material_ic_keyboard_arrow_left_black_24dp)

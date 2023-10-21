@@ -66,7 +66,7 @@ class FragmentForgotPass(): Fragment() {
             }
 
             buttonReset.setOnClickListener {
-                if (buttonReset.text == "Reset") {
+                if (buttonReset.text == "Изменить") {
                     goToReset()
                 } else {
                     retrieveCode()
@@ -123,8 +123,8 @@ class FragmentForgotPass(): Fragment() {
                                     "phone_number_users = '${editTextLogin.text.toString()}'")
 
                         if (query.executeQuery().next()) {
-                            editTextLogin.hint = "Code"
-                            buttonReset.text = "Reset"
+                            editTextLogin.hint = "Код подтверждения"
+                            buttonReset.text = "Изменить"
 
                             //тут отправлем код на почту или по смс
                         }

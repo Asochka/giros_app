@@ -67,7 +67,7 @@
                     android:layout_height="wrap_content"
                     android:layout_marginLeft="10dp"
                     android:textColor="@color/dark_pink"
-                    android:text="Account"/>
+                    android:text="Аккаунт"/>
 
                 <androidx.constraintlayout.widget.ConstraintLayout
                     android:id="@+id/edit_constraint"
@@ -301,7 +301,7 @@
                     android:layout_height="wrap_content"
                     android:layout_marginLeft="10dp"
                     android:textColor="@color/dark_pink"
-                    android:text="Help"/>
+                    android:text="Помощь"/>
 
                 <androidx.constraintlayout.widget.ConstraintLayout
                     android:id="@+id/askQue_constraint"

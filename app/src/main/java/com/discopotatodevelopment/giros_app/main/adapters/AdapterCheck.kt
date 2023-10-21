@@ -36,7 +36,7 @@ class AdapterCheck(contextHistory: FragmentHistory): RecyclerView.Adapter<Adapte
                     "${cal[Calendar.MONTH]+1}"
             timePurch = "в ${cal[Calendar.HOUR_OF_DAY]}:${cal[Calendar.MINUTE]}"
 
-            calories = check.calories_check.roundToInt().toString() + " kkal"
+            calories = check.calories_check.roundToInt().toString() + " ккал"
             sum = DecimalFormat("#.##").format(check.total_amount_check)
 
             val list_bind: Array<TextView> by lazy {

@@ -38,15 +38,30 @@
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toBottomOf="@+id/dish_recyclerView">
 
-                <TextView
-                    android:id="@+id/amount_pay"
-                    android:layout_width="wrap_content"
+                <LinearLayout
+                    android:id="@+id/pay_linearLayout_2"
+                    android:layout_width="170dp"
                     android:layout_height="wrap_content"
                     android:layout_gravity="center"
-                    android:layout_margin="@dimen/margin_amount_pay"
-                    android:text="@{amount}"
-                    android:textSize="28dp" />
-
+                    android:orientation="horizontal">
+                    <TextView
+                        android:id="@+id/amount_pay"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_marginStart="80dp"
+                        android:text="@{amount}"
+                        android:textSize="28dp"/>
+                    <TextView
+                        android:id="@+id/amount_pay_2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_marginStart="10dp"
+                        android:layout_margin="@dimen/margin_amount_pay"
+                        android:text="₽"
+                        android:textSize="25dp" />
+                </LinearLayout>
                 <Button
                     android:id="@+id/toPay"
                     android:layout_width="wrap_content"
@@ -67,6 +82,17 @@
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintTop_toTopOf="parent"
                 app:srcCompat="@drawable/qrcode" />
+
+            <ImageButton
+                android:id="@+id/menuButton"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp"
+                android:background="@drawable/imagebutton_background"
+                android:contentDescription="menufortoday"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:srcCompat="@drawable/forkknife" />
 
             <TextView
                 android:id="@+id/start_info"

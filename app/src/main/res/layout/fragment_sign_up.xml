@@ -27,7 +27,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
                 android:singleLine="true"
-                android:hint="имя"
+                android:hint="Имя"
                 android:textSize="16dp"/>
         </com.google.android.material.textfield.TextInputLayout>
 

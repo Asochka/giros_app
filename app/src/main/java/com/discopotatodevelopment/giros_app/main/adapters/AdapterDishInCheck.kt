@@ -27,7 +27,7 @@ class AdapterDishInCheck(contextCheck: FragmentCheckInfo): RecyclerView.Adapter<
         fun bind(dishInCheck: DishInfo) = with(binding) {
             foodName = dishInCheck.name_cl
             foodPrice = DecimalFormat("#.##").format((dishInCheck.price_tomain_cl * dishInCheck.mass_tomain_cl / 100))
-            massOfDish = dishInCheck.mass_tomain_cl.roundToInt().toString() + " gram"
+            massOfDish = dishInCheck.mass_tomain_cl.roundToInt().toString() + " грамм"
 
             binding.loadBar.visibility = View.VISIBLE
             binding.dishPhoto.load(dishInCheck.photo_url) {
@@ -38,10 +38,10 @@ class AdapterDishInCheck(contextCheck: FragmentCheckInfo): RecyclerView.Adapter<
 
             dishInfo.setOnClickListener {
                 val str1 = dishInCheck.name_cl
-                val str2 = dishInCheck.calories_toinfo_cl       //calories_info_cl
-                val str3 = dishInCheck.p_toinfo_cl.toString()       //p_info_cl
-                val str4 = dishInCheck.f_toinfo_cl.toString()       //f_info_cl
-                val str5 = dishInCheck.c_toinfo_cl.toString()       //c_info_cl
+                val str2 = dishInCheck.calories_toinfo_cl.toInt().toString()       //calories_info_cl
+                val str3 = dishInCheck.p_toinfo_cl.toInt().toString()       //p_info_cl
+                val str4 = dishInCheck.f_toinfo_cl.toInt().toString()       //f_info_cl
+                val str5 = dishInCheck.c_toinfo_cl.toInt().toString()       //c_info_cl
                 val str6 = dishInCheck.composition_toinfo_cl       //composition_info_cl
 
                 //val de = FragmentCheckInfoDirections.actionFragmentCheckInfoToDishinfoDialog()
